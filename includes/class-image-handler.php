@@ -57,7 +57,7 @@ class Image_Handler {
 			esc_url_raw( $account->avatar ),
 			array(
 				'timeout'    => 20,
-				'user-agent' => apply_filters( 'import_mastodon_comments', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36 Edg/81.0.416.53' ),
+				'user-agent' => apply_filters( 'import_mastodon_comments_user_agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36 Edg/81.0.416.53' ),
 			)
 		);
 
