@@ -276,7 +276,7 @@ class Import_Handler {
 	 * @param Object $reply   Mastodon status.
 	 */
 	private function add_comment( $post_id, $reply ) {
-		if ( apply_filters( 'import_mastodon_comments', false, $post_id, $reply ) ) {
+		if ( apply_filters( 'import_mastodon_comments_skip', false, $post_id, $reply ) ) {
 			// Use this to skip replies that, e.g., were actually sent _from_
 			// your blog.
 			error_log( 'Skipping the status at ' . $reply->url . '.' ); // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
